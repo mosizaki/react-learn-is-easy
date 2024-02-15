@@ -1,5 +1,6 @@
 import CoreConcept from "./CoreConcept";
 import {CORE_CONCEPTS} from "./data.js"
+import TabButton from "./tabbutton";
 
 const Main2 = () => {
     return (
@@ -14,7 +15,15 @@ const Main2 = () => {
           </ul>
         </section>
 
-
+        <section id="examples">
+          <h2>Examples</h2>
+          <menu>
+            <TabButton>Components</TabButton>
+            <TabButton>jsx</TabButton>
+            <TabButton>props</TabButton>
+            <TabButton>state</TabButton>
+          </menu>
+        </section>
       </main>
     )
 }
