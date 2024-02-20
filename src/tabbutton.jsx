@@ -1,13 +1,8 @@
-const TabButton = ({children}) => {
-
-    function  handleClick(e) {
-        console.log("hello world!")
-    }
-
+const TabButton = ({children, onSelect, isSelected}) => {
 
     return (
         <li>
-            <button onClick={handleClick}>{children}</button>
+            <button className={isSelected ? 'active' : undefined } onClick={onSelect}>{children}</button>
         </li>
     )
 }
